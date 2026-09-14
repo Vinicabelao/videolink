@@ -8,6 +8,6 @@
     "express": "^5.1.0",
     "helmet": "^8.1.0",
     "morgan": "^1.10.0",
-    "yt-dlp-exec": "^3.0.21"
+    "youtube-dl-exec": "^3.1.15"
   }
 }
