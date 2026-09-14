@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import fs from "node:fs/promises";
 import { randomUUID } from "node:crypto";
-import ytdlp from "yt-dlp-exec";
+import ytdlp from "youtube-dl-exec";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
