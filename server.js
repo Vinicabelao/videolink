@@ -88,7 +88,6 @@ function supported(value) {
 
 const jobs = new Map();
 
-
 // ========================================
 // CONVERTER VÍDEO
 // ========================================
@@ -133,7 +132,6 @@ app.post("/api/convert", async (req, res) => {
     status: "processing"
   });
 
-  // Responde imediatamente ao navegador
   res.json({ id });
 
   try {
@@ -154,17 +152,13 @@ app.post("/api/convert", async (req, res) => {
 
       quiet: true,
 
-      // Se Deno estiver disponível,
-      // usa o runtime para os desafios do YouTube.
-      ...(process.env.DENO_AVAILABLE === "true"
-        ? {
-            jsRuntimes: "deno",
-            remoteComponents: "ejs:npm"
-          }
-        : {})
+      // Runtime JavaScript para desafios do YouTube
+      jsRuntimes: "deno",
+
+      // Scripts EJS oficiais
+      remoteComponents: "ejs:npm"
     });
 
-    // Verifica se o MP4 foi criado
     const stat = await fs
       .stat(finalFile)
       .catch(() => null);
@@ -207,7 +201,6 @@ app.post("/api/convert", async (req, res) => {
   }
 });
 
-
 // ========================================
 // STATUS DA CONVERSÃO
 // ========================================
@@ -248,7 +241,6 @@ app.get(
   }
 );
 
-
 // ========================================
 // CONTADOR DE DOWNLOADS
 // ========================================
@@ -261,7 +253,6 @@ app.get(
     });
   }
 );
-
 
 // ========================================
 // DOWNLOAD
@@ -307,7 +298,6 @@ app.get(
   }
 );
 
-
 // ========================================
 // PÁGINA PRINCIPAL
 // ========================================
@@ -324,7 +314,6 @@ app.get(
     );
   }
 );
-
 
 // ========================================
 // INICIAR SERVIDOR
