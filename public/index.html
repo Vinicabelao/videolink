@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VideoLink — YouTube & TikTok</title>
+  <meta name="description" content="Conversor de links de vídeo para conteúdo autorizado.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div>
+  <main class="shell">
+    <nav class="nav">
+      <div class="brand"><span class="brand-icon">▶</span><span>Video<span>Link</span></span></div>
+      <div class="badge">YouTube · TikTok</div>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow">CONVERSOR RÁPIDO</div>
+      <h1>Seu link.<br><span>Seu vídeo.</span></h1>
+      <p class="subtitle">Cole um link do YouTube ou TikTok e transforme-o em um arquivo de vídeo.</p>
+
+      <div class="card">
+        <form id="form">
+          <label for="url">Link do vídeo</label>
+          <div class="input-row">
+            <input id="url" type="url" placeholder="https://youtube.com/watch?v=..." autocomplete="off" required>
+            <button id="submit" type="submit"><span>Converter</span><b>→</b></button>
+          </div>
+        </form>
+
+        <div id="status" class="status hidden">
+          <div class="spinner"></div>
+          <div>
+            <strong id="status-title">Processando vídeo...</strong>
+            <p id="status-text">Isso pode levar alguns segundos.</p>
+          </div>
+        </div>
+
+        <div id="result" class="result hidden">
+          <div class="check">✓</div>
+          <div class="result-copy"><strong>Vídeo pronto!</strong><span>O arquivo MP4 foi gerado.</span></div>
+          <a id="download" class="download" href="#">Baixar MP4 ↓</a>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+      </div>
+
+      <div class="features">
+        <div><i>⚡</i><span><b>Rápido</b>Processamento simples</span></div>
+        <div><i>◎</i><span><b>MP4</b>Formato compatível</span></div>
+        <div><i>⌁</i><span><b>Privado</b>Arquivos temporários</span></div>
+      </div>
+
+      <div class="download-count">⬇ <strong id="download-count">0</strong> downloads realizados</div>
+      <p class="legal">Use somente vídeos que você tenha permissão para baixar e converter.</p>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
