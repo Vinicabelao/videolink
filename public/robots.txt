@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://videolink-ktw2.onrender.com/sitemap.xml
