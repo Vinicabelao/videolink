@@ -3,59 +3,225 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VideoLink — YouTube & TikTok</title>
-  <meta name="description" content="Conversor de links de vídeo para conteúdo autorizado.">
+
+  <title>VideoLink — Baixar vídeos em MP4</title>
+
+  <meta
+    name="description"
+    content="VideoLink: converta vídeos para MP4 de forma simples e rápida. Cole o link do vídeo e prepare seu arquivo MP4."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://videolink-ktw2.onrender.com/"
+  >
+
   <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-  <div class="bg-orb orb-a"></div><div class="bg-orb orb-b"></div>
+
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+
   <main class="shell">
+
     <nav class="nav">
-      <div class="brand"><span class="brand-icon">▶</span><span>Video<span>Link</span></span></div>
-      <div class="badge">YouTube · TikTok</div>
+
+      <div class="brand">
+        <span class="brand-icon">▶</span>
+        <span>Video<span>Link</span></span>
+      </div>
+
+      <div class="badge">
+        YouTube · TikTok
+      </div>
+
     </nav>
 
     <section class="hero">
-      <div class="eyebrow">CONVERSOR RÁPIDO</div>
-      <h1>Seu link.<br><span>Seu vídeo.</span></h1>
-      <p class="subtitle">Cole um link do YouTube ou TikTok e transforme-o em um arquivo de vídeo.</p>
+
+      <div class="eyebrow">
+        CONVERSOR RÁPIDO
+      </div>
+
+      <h1>
+        Seu link.<br>
+        <span>Seu vídeo.</span>
+      </h1>
+
+      <p class="subtitle">
+        Cole um link do YouTube ou TikTok e transforme-o em um arquivo de vídeo MP4.
+      </p>
 
       <div class="card">
+
         <form id="form">
-          <label for="url">Link do vídeo</label>
+
+          <label for="url">
+            Link do vídeo
+          </label>
+
           <div class="input-row">
-            <input id="url" type="url" placeholder="https://youtube.com/watch?v=..." autocomplete="off" required>
-            <button id="submit" type="submit"><span>Converter</span><b>→</b></button>
+
+            <input
+              id="url"
+              type="url"
+              placeholder="https://youtube.com/watch?v=..."
+              autocomplete="off"
+              required
+            >
+
+            <button id="submit" type="submit">
+              <span>Converter</span>
+              <b>→</b>
+            </button>
+
           </div>
+
         </form>
 
         <div id="status" class="status hidden">
+
           <div class="spinner"></div>
+
           <div>
-            <strong id="status-title">Processando vídeo...</strong>
-            <p id="status-text">Isso pode levar alguns segundos.</p>
+
+            <strong id="status-title">
+              Processando vídeo...
+            </strong>
+
+            <p id="status-text">
+              Isso pode levar alguns segundos.
+            </p>
+
           </div>
+
         </div>
 
         <div id="result" class="result hidden">
-          <div class="check">✓</div>
-          <div class="result-copy"><strong>Vídeo pronto!</strong><span>O arquivo MP4 foi gerado.</span></div>
-          <a id="download" class="download" href="#">Baixar MP4 ↓</a>
+
+          <div class="check">
+            ✓
+          </div>
+
+          <div class="result-copy">
+
+            <strong>
+              Vídeo pronto!
+            </strong>
+
+            <span>
+              O arquivo MP4 foi gerado.
+            </span>
+
+          </div>
+
+          <a
+            id="download"
+            class="download"
+            href="#"
+          >
+            Baixar MP4 ↓
+          </a>
+
         </div>
 
         <div id="error" class="error hidden"></div>
+
       </div>
 
       <div class="features">
-        <div><i>⚡</i><span><b>Rápido</b>Processamento simples</span></div>
-        <div><i>◎</i><span><b>MP4</b>Formato compatível</span></div>
-        <div><i>⌁</i><span><b>Privado</b>Arquivos temporários</span></div>
+
+        <div>
+          <i>⚡</i>
+          <span>
+            <b>Rápido</b>
+            Processamento simples
+          </span>
+        </div>
+
+        <div>
+          <i>◎</i>
+          <span>
+            <b>MP4</b>
+            Formato compatível
+          </span>
+        </div>
+
+        <div>
+          <i>⌁</i>
+          <span>
+            <b>Privado</b>
+            Arquivos temporários
+          </span>
+        </div>
+
       </div>
 
-      <div class="download-count">⬇ <strong id="download-count">0</strong> downloads realizados</div>
-      <p class="legal">Use somente vídeos que você tenha permissão para baixar e converter.</p>
+      <div class="download-count">
+        ⬇
+        <strong id="download-count">0</strong>
+        downloads realizados
+      </div>
+
+
+      <!-- Conteúdo para ajudar o Google a entender o site -->
+
+      <section class="seo-content">
+
+        <h2>VideoLink — Baixar vídeos em MP4</h2>
+
+        <p>
+          O VideoLink é uma ferramenta para converter vídeos
+          para o formato MP4 de forma simples e rápida.
+        </p>
+
+        <h2>Como baixar um vídeo em MP4?</h2>
+
+        <p>
+          Cole o link do vídeo no campo acima, clique em
+          Converter e aguarde o processamento. Quando o vídeo
+          estiver pronto, aparecerá o botão para baixar o
+          arquivo MP4.
+        </p>
+
+        <h2>Conversor de vídeo para MP4</h2>
+
+        <p>
+          O VideoLink permite preparar arquivos de vídeo
+          em formato MP4 a partir de links compatíveis
+          do YouTube e TikTok.
+        </p>
+
+        <h2>Baixar vídeos do YouTube</h2>
+
+        <p>
+          Cole o endereço de um vídeo do YouTube no VideoLink
+          para iniciar o processamento e gerar o arquivo de
+          vídeo.
+        </p>
+
+        <h2>Converter vídeos do TikTok</h2>
+
+        <p>
+          O VideoLink também aceita links compatíveis do TikTok
+          e permite preparar o vídeo em formato MP4.
+        </p>
+
+      </section>
+
+      <p class="legal">
+        Use somente vídeos que você tenha permissão para baixar e converter.
+      </p>
+
     </section>
+
   </main>
+
   <script src="/app.js"></script>
+
 </body>
 </html>
